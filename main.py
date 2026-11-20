@@ -57,7 +57,3 @@ def Search(event):
 
     # Get the element symbol from HTML
     Element1 = document.querySelector("#Elements").value.strip()
-
-
-
-   "Thermometer"  = {"Measures " : ("Air Temperature", "Degrees Celsius (°C)"," yellow" ) } 
