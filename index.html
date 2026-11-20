@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skilstaest</title>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2026.7.3/core.css">
+
+    <script type="module"
+            src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 10px;
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        .Periodic {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid #2865ff;
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+        }
+
+        .Periodic h1:first-child {
+            background: #0875f9;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin: 0;
+        }
+
+        .Elements {
+            padding: 30px;
+        }
+
+        .Elements p {
+            background: #d0f4fa;
+            border: 1px solid #9beafa;
+            border-radius: 8px;
+            padding: 18px;
+            color: #17617a;
+        }
+
+        .Elements label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .Elements input {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: white;
+            font-size: 18px;
+        }
+
+        button {
+            width: 90%;
+            margin: 20px 5%;
+            padding: 15px;
+            border: 0;
+            border-radius: 6px;
+            color: white;
+            background: #3399FF;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #007BFF;
+        }
+
+        #List {
+            margin: 20px 30px 30px;
+            padding: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            background: #f5f6f7;
+            border-left: 6px solid #0875f9;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Periodic">
+
+        <h1>Weather Instruments Information Board</h1>
+
+        <div class="Elements">
+
+
+            <label for="Elements">Enter symbol</label>
+
+            <input
+                type="text"
+                id="Elements"
+                required
+            >
+
+        </div>
+
+        <button py-click="Search">
+            Search for element info
+        </button>
+
+        <h1>Findings</h1>
+
+        <div id="List">
+            Your result will appear here.
+        </div>
+
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
